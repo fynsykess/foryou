@@ -40,3 +40,14 @@ heroTitle.addEventListener("mouseout", () => {
     heroTitle.style.color = "white";
     heroTitle.style.transform = "rotate(0deg)";
 });
+
+// Fungsi untuk menampilkan dan memutar playlist
+function playSpotifyPlaylist() {
+    // Gantilah URL ini dengan playlist Spotify yang sesuai
+    var playlistUrl = "https://open.spotify.com/embed/playlist/0a6etZw7qayERXGyJx9H4D"; 
+
+    // Menentukan URL untuk iframe Spotify Player
+    var iframe = document.getElementById('spotifyPlayer');
+    iframe.src = playlistUrl;  // Masukkan URL playlist ke dalam iframe
+    iframe.style.display = 'block';  // Tampilkan iframe
+}
