@@ -7,10 +7,7 @@ body, ul, li {
 }
 
 body {
-    background-image: url(px.jpg);
-    background-size: cover; /* Agar gambar mengisi seluruh layar */
-    background-position: center center; /* Menempatkan gambar di tengah */
-    background-repeat: no-repeat; /* Agar gambar tidak terulang */
+    background: linear-gradient(to bottom, #ffe0f0, #ffcce7);
     color: #333;
     scroll-behavior: smooth;
 }
