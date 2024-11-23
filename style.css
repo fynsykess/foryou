@@ -7,7 +7,10 @@ body, ul, li {
 }
 
 body {
-    background: linear-gradient(to bottom, #ffe0f0, #ffcce7);
+    background-image: url(px.jpg);
+    background-size: cover; /* Agar gambar mengisi seluruh layar */
+    background-position: center center; /* Menempatkan gambar di tengah */
+    background-repeat: no-repeat; /* Agar gambar tidak terulang */
     color: #333;
     scroll-behavior: smooth;
 }
@@ -121,6 +124,33 @@ body {
 .spotify-logo img:hover {
     transform: rotate(10deg) scale(1.1);
 }
+
+/* Gaya tombol */
+.play-button {
+    background-color: #1DB954; /* Warna hijau Spotify */
+    color: white;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+
+.play-button:hover {
+    background-color: #1AA34A;
+}
+
+/* Style untuk iframe player */
+.spotify-player {
+    width: 100%;
+    height: 380px;
+    border: none;
+    display: none; /* Sembunyikan player awalnya */
+}
+
 
 /* Footer */
 footer {
